@@ -1,0 +1,14 @@
+<div dir="auto">
+  <h1 mat-dialog-title>{{project.name}}</h1>
+  <div mat-dialog-content>
+
+    <vg-player>
+      <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
+        <source [src]="project.video" type="video/mp4">
+      </video>
+    </vg-player>
+  </div>
+  <div mat-dialog-actions>
+
+  </div>
+</div>

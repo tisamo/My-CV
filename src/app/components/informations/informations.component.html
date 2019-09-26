@@ -1,0 +1,75 @@
+<div class="container">
+  <div class="row title">
+    <h1 class="about">ABOUT</h1><h1 (click)="showMe()" class="me">ME</h1>
+  </div>
+
+    <div class="row" *ngIf="show">
+      <div class="col-lg-3">
+        <p class="blue">Phone: +06317878857</p>
+        <p class="blue">Email: tisaaaful@gmail.com</p>
+        <img  src="../../../assets/img/me.jpg" class="img-fluid profile" alt="Responsive image">
+      </div>
+      <div class="col-lg-7 intro">
+        <h3 class="blue">Introduction</h3>
+        <p class="intro">My name is Kristóf Krasznai. I'm from a small town near pécs called Hosszúhetény. I live in a very technology oriented family even our TVs are smarter than us. I have two brothers both of them are working as programmers so i just have to follow the path, but i need to start somewhere. I have clear directions and will to move if i get the chance i know what i have to do to become better and i got the help too.
+          I don't want to praise myself , but i've seen some CVs so that's what i supposed to do here. I'm very motivated to reach higher heights and i know what mountains i have to climb for that. I'm learning and have experience in Angular 8, typescript, c#, Mysql, Firebase, Java, bootstrap. I'd be very grateful if you gave me a chance not to shine but to discover my own light cause that'd be my first job. I'm very obsessed with music and art sometimes i make my own.
+        </p>
+      </div>
+    </div>
+  <div class="row" *ngIf="show">
+    <div class="col-lg-12 center" *ngIf="!cv">
+      <button type="button" class="btn btn-primary" (click)="showCv()">
+       Show CV
+      </button>
+    </div>
+
+    <div class="col-lg-12 center" *ngIf="cv">
+      <button type="button" class="btn btn-primary" (click)="showCv()">
+    Hide
+      </button>
+      <div class="cv top">
+        <div class="row">
+          <div class="col-lg-3">
+
+          </div>
+          <div class="col-lg-2">
+            <h3 class="bluerow">Studies</h3>
+          </div>
+        </div>
+
+        <div class="row margin" *ngFor="let school of schools">
+          <div class="col-lg-3 ">
+
+          </div>
+          <div class="col-lg-3 ">
+           <p class="blue left">{{school.name}}</p>
+          </div>
+          <div class="col-lg-3">
+           <p class="left"> {{school.fact}}</p>
+          </div>
+          <div class="col-lg-3 ">
+            <p class="left">  {{school.year}}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+
+          </div>
+          <div class="col-lg-2">
+            <h3 class="bluerow">
+              Skills
+            </h3>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+
+
+
+
+  </div>
+
+
+
+
