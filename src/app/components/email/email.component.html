@@ -1,0 +1,35 @@
+<div class="red" >
+  <div class="" style="text-align: center;">
+    <h3 class="text-white toCenter">Kapcsolat felvétel</h3>
+  </div>
+</div>
+<div class="row text-center">
+ <div class="col-3">
+
+ </div>
+  <div class="col-7  col-centered">
+     <form class="theform">
+       <div class="field">
+         <label class="right" for="full-name">Név</label>
+       <input type="text" [(ngModel)]="name" name="name" id="full-name" class="input" placeholder="" required>
+       </div>
+       <div class="field">
+         <label class="right" for="email">Email</label>
+         <input type="email"  [(ngModel)]="email"  name="email" ngModel="email" id="email" class="input" required>
+       </div>
+       <div class="field">
+         <label class="right" for="subject">Tárgy</label>
+         <input type="text" [(ngModel)]="subject" ngModel="name" name="name" id="subject" class="input" placeholder="" required>
+       </div>
+       <div class="field">
+         <label for="message" class="right">Üzenet</label>
+         <textarea name="message" [(ngModel)]="message"  id="message" class="input" required="required" ></textarea>
+       </div>
+      <button (click)="validate()" class="submit btn " type="submit">Küldés</button>
+       <br>
+    </form>
+
+  </div>
+</div>
+
+

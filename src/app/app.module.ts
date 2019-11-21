@@ -9,7 +9,7 @@ import {TabsModule} from 'ngx-bootstrap/tabs';
 import {NgbModule, NgbTab, NgbTabset} from '@ng-bootstrap/ng-bootstrap';
 import {PdfViewerModule} from 'ng2-pdf-viewer';
 import {PreviewvideomodalComponent} from './components/previewvideomodal/previewvideomodal.component';
-import {MatDialogModule} from '@angular/material';
+import {MatDialogModule, MatSnackBarModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {VgCoreModule} from 'videogular2/compiled/src/core/core';
 import {VgControlsModule} from 'videogular2/compiled/src/controls/controls';
@@ -18,6 +18,8 @@ import {VgBufferingModule} from 'videogular2/compiled/src/buffering/buffering';
 import {FormsModule} from '@angular/forms';
 import {environment} from '../environments/environment.prod';
 import { AngularFireModule } from '@angular/fire';
+import {EmailComponent} from './components/email/email.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -25,7 +27,8 @@ import { AngularFireModule } from '@angular/fire';
     AppComponent,
     SkillsComponent,
     InformationsComponent,
-    PreviewvideomodalComponent
+    PreviewvideomodalComponent,
+    EmailComponent
 
   ],
   imports: [
@@ -40,6 +43,8 @@ import { AngularFireModule } from '@angular/fire';
     VgOverlayPlayModule,
     VgBufferingModule,
     FormsModule,
+    MatSnackBarModule,
+    HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase)
 
   ],
