@@ -28,7 +28,7 @@
     "cors": "^2.8.5",
     "email-templates": "^6.0.2",
     "emailjs": "^2.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "firebase": "^6.6.2",
     "install": "^0.13.0",
     "nativescript-email": "^1.5.5",
